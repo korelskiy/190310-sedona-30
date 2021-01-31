@@ -1,0 +1,408 @@
+/* Fonts */
+
+@font-face {
+  font-family: "PTSans";
+  src: local("PTSans"), 
+       url("../fonts/PTSans.woff2") format("woff2"),
+       url("../fonts/PTSans.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PTSans-Bold";
+  src: local("PTSans-Bold"),
+       url("../fonts/PTSans-Bold.woff2") format("woff2"),
+       url("../fonts/PTSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Visually-hidden */
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+}
+
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-blue: #81B3D2;
+  --basic-gray: #333333;
+  --basic-brown: #766357;
+  --basic-light-gray: #F2F2F2;
+  --basic-pale-gray: #EEEEEE;
+  --special-gray: #666666;
+  --special-blue: #669EC0;
+  --special-blue-dark: #5496BD;
+  --special-brown: #604E43;
+  --special-brown-dark: #503E33;
+
+}
+
+/* Global */
+
+.page-body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-gray);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+
+.main-subtitle {
+  font-family: "PTSans-Bold";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-family: "PTSans-Bold";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.site-navigation {
+  list-style: none;
+
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.site-navigation a:hover {
+  color: var(--basic-blue);
+}
+
+.site-navigation a:focus {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+/* Welcome */
+
+.welcome {
+  background-color: var(--basic-blue);
+  background-image: url(../img/bg_index.jpg);
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: center;
+}
+
+.welcome img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Description-city */
+
+.description-city {
+  text-align: center;
+}
+
+.description-city-text {
+  line-height: 26px;
+}
+
+/* Features */
+
+.features-list {
+  list-style: none;
+}
+
+.feature-items-content {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+  text-align: center;
+}
+
+.feature-items-list-color {
+  background-color: var(--basic-pale-gray);
+}
+
+.feature-items-content-title {
+  font-family: "PTSans-Bold";
+  font-weight: 700;
+  font-size: 21px;
+  color: var(--basic-white);
+  text-align: center;
+}
+
+.feature-items-list {
+  list-style: none;
+}
+
+.feature-items-list-item {
+  text-align: center;
+}
+
+.feature-items-list-title{
+  font-family: "PTSans-Bold";
+  font-weight: 700;
+  font-size: 21px;
+  color: var(--basic-black);
+}
+
+.feature-items-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Search */
+
+.search {
+  text-align: center;
+  line-height: 24px;
+}
+
+.search-title {
+  font-family: "PTSans-Bold";
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--basic-black);
+}
+
+.search-item {
+  font-family: "PTSans-Bold";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.search-item input {
+  background-color: var(--basic-light-gray);
+  outline: none;
+  border: none;
+}
+
+/* Map */
+
+.map {
+  text-align: center;
+}
+
+.map-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer */
+
+.footer-phone {
+  text-decoration: none;
+}
+
+.footer-social{
+  list-style: none;
+}
+
+.footer-copyright-text {
+  line-height: 26px;
+}
+
+/* Filters */
+
+.filters {
+  background-color: var(--basic-blue);
+}
+
+.filter-title{
+  font-family: "PTSans-Bold";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+
+.filter-checkbox,
+.filter-cost,
+.filter-cost-text {
+  border: none;
+}
+
+.filter-list{
+  list-style: none;
+  color: var(--basic-white);
+}
+
+/* Sorting */
+
+.sorting-text {
+  font-size: 12px;
+  line-height: 18px; 
+  color: var(--basic-black);
+}
+
+.sorting-list {
+  list-style: none;
+  text-decoration: none;
+}
+
+.sorting-list-item a{
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-decoration: none; 
+  border-bottom: 1px dashed;
+  border-color: var(--basic-blue);
+  opacity: 30%;
+}
+
+.sorting-list-item a:hover {
+  color: var(--basic-blue);
+  border-bottom: 1px dashed;
+  border-color: var(--basic-blue);
+  opacity: 100%;
+}
+
+.sorting-list-item a:focus {
+  color: var(--basic-black);
+  border-bottom: none;
+  opacity: 100%;
+}
+
+/* Catalog */
+
+.hotel-list {
+  list-style: none;
+}
+
+.hotel-item-title{
+  text-decoration: none;
+}
+
+.hotel-item-title:hover {
+  color: var(--basic-blue);
+}
+
+.hotel-item-title:focus {
+  opacity: 30%;
+}
+
+.hotel-rating {
+  color: var(--special-gray);
+}
+
+/* Button */
+
+.button {
+  font-family: "PTSans-Bold";
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.buttom-search {
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+  font-size: 21px;
+  line-height: 26px;
+  width: 568px;
+  height: 86px;
+}
+
+.buttom-search:hover {
+  background-color: var(--special-brown);
+}
+
+.buttom-search:focus {
+  background-color: var(--special-brown-dark);
+}
+
+.button-find{
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+  font-size: 21px;
+  line-height: 26px;
+  width: 458px;
+  height: 58px;
+}
+
+.button-find:hover {
+  background-color: var(--special-blue);
+}
+
+.button-find:focus {
+  background-color: var(--special-blue-dark);
+}
+
+.social-button {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+  text-decoration: none;
+}
+
+.social-button:hover {
+  background-color: var(--special-blue);
+}
+
+.social-button:focus {
+  background-color: var(--special-blue-dark);
+}
+
+.buttom-filter {
+  background-color: Transparent;
+  border: 2px solid;
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 21px;
+  height: 36px;
+  width: 137px;
+  text-transform: uppercase;
+}
+
+.buttom-filter:hover {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  border: none;
+}
+
+.button-detail {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.button-detail:hover {
+  background-color: var(--special-blue);
+}
+
+.button-detail:focus {
+  background-color: var(--special-blue-dark);
+}
+
+.button-reserve {
+  color: var(--basic-white);
+  background-color: var(--basic-brown);  
+}
+
+.button-reserve:hover {
+  background-color: var(--special-brown);
+}
+
+.button-reserve:focus {
+  background-color: var(--special-brown-dark);
+}

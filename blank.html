@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>HTML Academy: Заглушка Седона</title>
+	<link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 	<link rel="icon" href="favicon.ico"><!-- 32×32 -->
     <link rel="icon" href="img/icon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/icon/apple.png"><!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
 </head>
-<body>
-	<header>
+<body class="page-body">
+	<header class="main-header">
 		<!-- Шапка сайта -->
-		<nav>
-			<a href="index.html">
+		<nav class="main-navigation">
+			<a href="index.html" class="main-header-logo">
 				<img src="img/logo.svg" width="138" height="70" alt="Sity of Sedona web site">
 			</a>
-			<ul>
+			<ul class="site-navigation">
 				<li><a href="blank.html">Информация</a></li>
 				<li><a href="blank.html">Фото и видео</a></li>
 				<li><a href="blank.html">Карта штата</a></li>
@@ -23,25 +25,25 @@
 			</ul>	
 		</nav>
 	</header>
-	<main>
+	<main class="container">
 		<!-- Основное содержимое страницы -->
-		<h1>Страница-заглушка для сайта города Седона</h1><!-- Описание раздела скроем в CSS -->
+		<h1 class="visually-hidden">Страница-заглушка для сайта города Седона</h1>
 	</main>
-	<footer>
+	<footer class="main-footer">
 	<!-- Подвал сайта -->
-		<p>
-			<span>#visitSEDONA</span>
-			<a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>	
+		<p class="footer-contacts">
+			<span class="main-subtitle">#visitSEDONA</span><br>
+			<a class="main-subtitle footer-phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>	
 		</p>
-		<ul>
-			<li><a href="#">Twitter</a></li>
-			<li><a href="#">Facebook</a></li>
-			<li><a href="#">YouTube</a></li>
+		<ul class="footer-social">
+			<li><a class="social-button" href="#">Twitter</a></li>
+			<li><a class="social-button" href="#">Facebook</a></li>
+			<li><a class="social-button" href="#">YouTube</a></li>
 		</ul>
-		<p>
+		<p class="footer-copyright">
 			<span>Website by</span>
-			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="Лендинг интенсива «HTML и CSS. Профессиональная вёрстка сайтов»" width="115" height="41"></a>
+			<a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="Лендинг интенсива «HTML и CSS. Профессиональная вёрстка сайтов»" width="115" height="41"></a>
 		</p>
-	</footer>	
-</body>
+	</footer>
+  </body>
 </html>
