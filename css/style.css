@@ -316,7 +316,7 @@
   text-transform: uppercase;
 }
 
-.buttom-search {
+.button-search {
   color: var(--basic-white);
   background-color: var(--basic-brown);
   font-size: 21px;
@@ -325,11 +325,11 @@
   height: 86px;
 }
 
-.buttom-search:hover {
+.button-search:hover {
   background-color: var(--special-brown);
 }
 
-.buttom-search:focus {
+.button-search:focus {
   background-color: var(--special-brown-dark);
 }
 
