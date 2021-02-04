@@ -101,6 +101,11 @@ background-color: var(--basic-light-gray);
   grid-column: 2 / -2;
 }
 
+.filter {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+}
+
 /* Main navigation */
 
 .main-navigation {
