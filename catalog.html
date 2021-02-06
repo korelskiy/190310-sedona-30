@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<head>
+  <head>
 	<meta charset="UTF-8">
 	<title>HTML Academy: Каталог Седона</title>
 	<link href="css/normalize.css" rel="stylesheet">
@@ -9,10 +9,9 @@
     <link rel="icon" href="img/icon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/icon/apple.png"><!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
-</head>
-<body class="page-body">
-	<header class="main-header">
-		<!-- Шапка сайта-->
+  </head>
+  <body class="page-body">
+	<header class="main-header"> <!-- Шапка сайта-->
 		<nav class="main-navigation">
 			<a href="index.html" class="main-header-logo">
 				<img src="img/logo.svg" width="138" height="70" alt="Sity of Sedona web site">
@@ -25,8 +24,7 @@
 			</ul>	
 		</nav>
 	</header>
-	<main class="container page-catalog">
-		<!-- Основное содержимое страницы -->
+	<main class="container page-catalog"><!-- Основное содержимое страницы -->
 		<h1 class="visually-hidden">Гостиницы города Седона</h1>
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр гостиниц города Седона</h2>
@@ -104,19 +102,19 @@
 					<h3 class="visually-hidden">Гостиница ARAMA RESORT & SPA</h3>
 					<table class="hotel-list-item">
 						<tr>
-							<th rowspan="3"><img src="img/hotel/hotel_arama.jpg" width="135" height="90" alt="Гостиница ARAMA RESORT & SPA"></th>
-							<th colspan="2"><a class="main-subtitle hotel-item-title" href="#">ARAMA RESORT & SPA</a></th>
-							<th class="hotel-star">Здесь будут звезды рейтинга</th>
+							<th rowspan="3" class="hotel-img"><img src="img/hotel/hotel_arama.jpg" width="135" height="90" alt="Гостиница ARAMA RESORT & SPA"></th>
+							<th colspan="2" class="hotel-item-title"><a class="main-subtitle" href="#">ARAMA RESORT & SPA</a></th>
+							<th class="hotel-star">Звезды</th>
 						</tr>
 						<tr>
 							<td class="hotel-list-text">Гостиница</td>
-							<td class="hotel-list-text" colspan="2">от 4000 р.</td>
+							<td class="hotel-list-text-cost" colspan="2">от 4000 р.</td>
 						</tr>
 						<tr>
 							<td>
 								<a class="button button-detail" href="#">Подробнее</a>
 							</td>
-							<td>
+							<td class="hotel-list-reserve">
 								<a class="button button-reserve" href="#">Забронировать</a>
 							</td>
 							<td class="hotel-list-text hotel-rating">Рейтинг: 8.5</td>
@@ -127,19 +125,19 @@
 					<h3 class="visually-hidden">Мотель DESERT QUAIL INN</h3>
 					<table class="hotel-list-item">
 						<tr>
-							<th  rowspan="3"><img src="img/hotel/hotel_desert.jpg" width="135" height="90" alt="Мотель DESERT QUAIL INN"></th>
-							<th colspan="2"><a class="main-subtitle hotel-item-title" href="#">DESERT QUAIL INN</a></th>
-							<th class="hotel-star">Здесь будут звезды рейтинга</th>
+							<th  rowspan="3" class="hotel-img"><img src="img/hotel/hotel_desert.jpg" width="135" height="90" alt="Мотель DESERT QUAIL INN"></th>
+							<th colspan="2" class="hotel-item-title"><a class="main-subtitle hotel-item-title" href="#">DESERT QUAIL INN</a></th>
+							<th class="hotel-star">Звезды</th>
 						</tr>
 						<tr>
 							<td class="hotel-list-text">Мотель</td>
-							<td class="hotel-list-text" colspan="2">от 3000 р.</td>
+							<td class="hotel-list-text-cost" colspan="2">от 3000 р.</td>
 						</tr>
 						<tr>
 							<td>
 								<a class="button button-detail" href="#">Подробнее</a>
 							</td>
-							<td>
+							<td class="hotel-list-reserve">
 								<a class="button button-reserve" href="#">Забронировать</a>
 							</td>
 							<td class="hotel-list-text hotel-rating">Рейтинг: 8.9</td>
@@ -150,19 +148,19 @@
 					<h3 class="visually-hidden">Апартаменты VILLAS AT POCO DIABLO</h3>
 					<table class="hotel-list-item">
 						<tr>
-							<th  rowspan="3"><img src="img/hotel/hotel_villas.jpg" width="135" height="90" alt="Апартаменты VILLAS AT POCO DIABLO"></th>
-							<th colspan="2"><a class="main-subtitle hotel-item-title" href="#">VILLAS AT POCO DIABLO</a></th>
-							<th class="hotel-star">Здесь будут звезды рейтинга</th>
+							<th  rowspan="3" class="hotel-img"><img src="img/hotel/hotel_villas.jpg" width="135" height="90" alt="Апартаменты VILLAS AT POCO DIABLO"></th>
+							<th colspan="2" class="hotel-item-title"><a class="main-subtitle hotel-item-title" href="#">VILLAS AT POCO DIABLO</a></th>
+							<th class="hotel-star">Звезды</th>
 						</tr>
 						<tr>
 							<td class="hotel-list-text">Апартаменты</td>
-							<td class="hotel-list-text" colspan="2">от 2000 р.</td>
+							<td class="hotel-list-text-cost" colspan="2">от 2000 р.</td>
 						</tr>
 						<tr>
 							<td>
 								<a class="button button-detail" href="#">Подробнее</a>
 							</td>
-							<td>
+							<td class="hotel-list-reserve">
 								<a class="button button-reserve" href="#">Забронировать</a>
 							</td>
 							<td class="hotel-list-text hotel-rating">Рейтинг: 9.2</td>
