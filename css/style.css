@@ -265,17 +265,26 @@ background-color: var(--basic-light-gray);
   text-align: center;
 }
 
+.feature-items-list-item p {
+  padding: 0;
+  margin-top: 25px;
+}
+
 .feature-items-list-title{
   font-family: "PTSans-Bold";
   font-weight: 700;
   font-size: 21px;
   color: var(--basic-black);
-  margin: 47px 0 0 0;
+  margin: 28px 0 0 0;
 }
 
 .feature-items-img {
   max-width: 100%;
   height: auto;
+}
+
+.feature-items-list-icon {
+  margin-top: 60px;
 }
 
 /* Search */
@@ -306,6 +315,10 @@ background-color: var(--basic-light-gray);
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
+  text-align: left;
+  padding-bottom: 41px;
+  padding-left: 55px;
+  margin: 0px;
 }
 
 .search-item input {
@@ -365,12 +378,20 @@ background-color: var(--basic-light-gray);
   margin-top: 38px;
 }
 
+.contacts-subtitle {
+  display: block;
+  padding-bottom: 9px;
+}
+
 .footer-phone {
   text-decoration: none;
 }
 
 .footer-copyright-text {
-  line-height: 26px;
+  display: inline-block;
+  margin-right: 8px;
+  padding-bottom: 20px;
+  vertical-align: middle;
 }
 
 
@@ -607,8 +628,8 @@ background-color: var(--basic-light-gray);
 
 .button-detail {
   display: inline-block;
-  height: 27px;
-  width: 110px;
+  padding: 3px 17px;
+  margin-right: 6px;
   color: var(--basic-white);
   background-color: var(--basic-blue);
 }
@@ -623,8 +644,7 @@ background-color: var(--basic-light-gray);
 
 .button-reserve {
   display: inline-block;
-  height: 27px;
-  width: 142px;  
+  padding: 3px 17px; 
   color: var(--basic-white);
   background-color: var(--basic-brown);  
 }
