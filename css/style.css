@@ -132,7 +132,7 @@ background-color: var(--basic-light-gray);
   width: 1054px;
   margin: 14px 0 16px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .site-navigation li:nth-child(1),
