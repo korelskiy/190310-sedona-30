@@ -132,8 +132,22 @@ background-color: var(--basic-light-gray);
   width: 1054px;
   margin: 14px 0 16px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2) {
+  width: 25%;
+  text-align: left;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+  width: 25%;
+  text-align: right;
+}
+
+
 
 .site-navigation a {
   color: var(--basic-black);
@@ -380,10 +394,24 @@ background-color: var(--basic-light-gray);
 
 .contacts-subtitle {
   display: block;
+  margin: 0;
   padding-bottom: 9px;
+  font-family: "PTSans-Bold";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+
 }
 
 .footer-phone {
+  font-family: "PTSans-Bold";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+  padding: 0;
+  margin: 0;
   text-decoration: none;
 }
 
@@ -394,12 +422,15 @@ background-color: var(--basic-light-gray);
   vertical-align: middle;
 }
 
-
 /* Filters */
 
 .filters {
   background-color: var(--basic-blue);
   background-image: url(../img/bg_catalog.jpg);
+}
+
+.filter{
+   position: relative;
 }
 
 .filter-title{
@@ -531,6 +562,12 @@ background-color: var(--basic-light-gray);
 }
 
 .hotel-item-title {
+  font-family: "PTSans-Bold";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+  margin: 0;
   padding: 0;
   vertical-align: top;
 }
@@ -576,6 +613,7 @@ background-color: var(--basic-light-gray);
 
 .button-search:focus {
   background-color: var(--special-brown-dark);
+  color: rgb(255, 255, 255, 0.3);
 }
 
 .button-find{
@@ -593,6 +631,7 @@ background-color: var(--basic-light-gray);
 
 .button-find:focus {
   background-color: var(--special-blue-dark);
+  color: rgb(255, 255, 255, 0.3);
 }
 
 .social-button {
@@ -607,6 +646,7 @@ background-color: var(--basic-light-gray);
 
 .social-button:focus {
   background-color: var(--special-blue-dark);
+  color: rgb(255, 255, 255, 0.3);
 }
 
 .buttom-filter {
@@ -618,6 +658,9 @@ background-color: var(--basic-light-gray);
   height: 36px;
   width: 137px;
   text-transform: uppercase;
+  position: absolute;
+  bottom: 32px;
+  right: 168px;
 }
 
 .buttom-filter:hover {
@@ -640,6 +683,7 @@ background-color: var(--basic-light-gray);
 
 .button-detail:focus {
   background-color: var(--special-blue-dark);
+  color: rgb(255, 255, 255, 0.3);
 }
 
 .button-reserve {
@@ -655,4 +699,5 @@ background-color: var(--basic-light-gray);
 
 .button-reserve:focus {
   background-color: var(--special-brown-dark);
+  color: rgb(255, 255, 255, 0.3);
 }
