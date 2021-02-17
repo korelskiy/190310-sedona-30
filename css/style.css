@@ -361,6 +361,9 @@ background-color: var(--basic-light-gray);
   width: 458px;
   height: 38px;
   position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 
@@ -369,10 +372,16 @@ background-color: var(--basic-light-gray);
   outline: none;
   border: none;
   height: 38px;
+  padding-left: 12px;
+  padding-right: 9px;
   margin-left: 12px;
   width: 346px;
   position: absolute;  
   right: 0px;
+  text-transform: uppercase;
+  background-image: url(../img/icon/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: right 9px top 7px;
 }
 
 .search-input-date:hover {
@@ -396,6 +405,61 @@ background-color: var(--basic-light-gray);
   right: 232px;
   padding: 0px;
 }
+
+/*
+
+.search-item {
+  position: relative;
+}
+
+.search-input-adults:before{
+  content: "";
+  position: absolute;
+  background-color: blue;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 0px;
+  top: 0px;
+  width: 12px;
+  height: 3px;
+}
+
+.search-adults:after{
+  content: "";
+  position: absolute;
+  background-image: url(../img/icon/plus.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 0px;
+  top: 0px;
+  width: 11px;
+  height: 11px;
+}
+
+.search-input-kids:before{
+  content: "";
+  position: absolute;
+  background-image: url(../img/icon/minus.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 0px;
+  top: 0px;
+  width: 12px;
+  height: 3px;
+}
+
+.search-input-kids:after{
+  content: "";
+  position: absolute;
+  background-image: url(../img/icon/plus.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 0px;
+  top: 0px;
+  width: 11px;
+  height: 11px;
+}
+*/
 
 .search-input-adults:hover {
   background-color: var(--special-dark-gray);
