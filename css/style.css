@@ -375,7 +375,7 @@ background-color: var(--basic-light-gray);
   padding-left: 12px;
   padding-right: 9px;
   margin-left: 12px;
-  width: 346px;
+  width: 326px;
   position: absolute;  
   right: 0px;
   text-transform: uppercase;
@@ -631,6 +631,12 @@ background-color: var(--basic-light-gray);
   border: none;
   margin: 30px 73px 0 0;
 
+}
+
+.min-price,
+.max-price {
+  display: flex;
+  text-align: center;
 }
 
 .filter-list{
