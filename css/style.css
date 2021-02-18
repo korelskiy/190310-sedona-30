@@ -885,11 +885,16 @@ background-color: var(--basic-light-gray);
 
 .hotel-item-name{
   padding: 0px;
+  vertical-align: top;
 }
 
 .hotel-img {
   width: 135px;
   padding-right: 29px;
+}
+
+.hotel-img img {
+  vertical-align: middle;
 }
 
 .hotel-list-text {
