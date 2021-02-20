@@ -168,10 +168,13 @@ background-color: var(--basic-light-gray);
 }
 
 .site-navigation a:focus {
-  color: var(--basic-brown);
+  color: var(--basic-black);
   opacity: 0.3;
 }
 
+.site-navigation a:active {
+  color: var(--basic-brown);
+}
 
 /* Welcome */
 
@@ -664,6 +667,31 @@ background-color: var(--basic-light-gray);
   width: 27px;
   height: 23px;
 }
+
+.filter-checkbox-item:disabled + label::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon/checkbox-off-dis.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 0px;
+  top: 0px;
+  width: 23px;
+  height: 23px;
+}
+
+.filter-checkbox-item:checked:disabled + label::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon/checkbox-on-dis.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 0px;
+  top: 0px;
+  width: 27px;
+  height: 23px;
+}
+
 
 .price-controls {
   width: 317px;
