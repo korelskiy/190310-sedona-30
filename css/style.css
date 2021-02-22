@@ -696,6 +696,10 @@ background-color: var(--basic-light-gray);
   height: 23px;
 }
 
+.filter-checkbox-item:focus + label::before {
+  border: 1px solid var(--basic-white);
+}
+
 .price-controls {
   width: 317px;
   height: 36px;

@@ -14,7 +14,7 @@
 	<header class="main-header"> <!-- Шапка сайта-->
 		<nav class="main-navigation">
 			<a href="index.html" class="main-header-logo">
-				<img src="img/logo.svg" width="138" height="70" alt="Sity of Sedona web site">
+				<img src="img/logo.svg" width="138" height="70" alt="Sity of Sedona web site" aria-label="Вернуться на главную страницу сайта Sedona">
 			</a>
 			<ul class="site-navigation">
 				<li><a href="blank.html">Информация</a></li>
@@ -68,10 +68,10 @@
 						<legend class="filter-title-cost">Стоимость в сутки(р):</legend>
 						<div class="range-filter">
           					<div class="price-controls">
-          						<label class="min-price">
+          						<label class="min-price" aria-label="Цена от">
               					от <input class="filter-cost-text" type="text" name="cost_day_from" value="0" size = "4">
             					</label>
-            					<label class="max-price">
+            					<label class="max-price" aria-label="Цена до">
               					до <input class="filter-cost-text" type="text" name="cost_day_to" value="3000" size = "4">
             					</label>
           					</div>
@@ -84,7 +84,7 @@
         					</div>
         				</div>
 					</fieldset>
-					<button class="buttom-filter" type="submit">Показать</button>
+					<button class="buttom-filter" type="submit" aria-label="Показать результаты">Показать</button>
 
 
 				</form>
@@ -93,7 +93,7 @@
 			<h2 class="visually-hidden">Сортировка результатов поиска</h2>
 			<p class="sorting-subtitle">Найдено:3</p>
 			<p class="sorting-text">Сортировка:</p>
-			<ul class="sorting-list">
+			<ul class="sorting-list" aria-label="Сортировка результатов">
 				<li class="sorting-list-item sorting-list-item-current">
 					<a href="#">По цене</a>
 				</li>
@@ -104,10 +104,10 @@
 					<a href="#">По рейтингу</a>
 				</li>
 				<li class="sorting-arrow-up">
-					<a href="#"></a>
+					<a href="#" aria-label="По убыванию"></a>
 				</li>
 				<li class="sorting-arrow-down sorting-arrow-down-current">
-					<a href="#"></a>
+					<a href="#" aria-label="По возростанию"></a>
 				</li>
 			</ul>
 		</section>
@@ -118,8 +118,8 @@
 					<h3 class="visually-hidden">Гостиница ARAMA RESORT & SPA</h3>
 					<table class="hotel-list-item">
 						<tr>
-							<th rowspan="3" class="hotel-img"><img src="img/hotel/hotel_arama.jpg" width="135" height="90" alt="Гостиница ARAMA RESORT & SPA"></th>
-							<th colspan="2" class="hotel-item-name"><a class="hotel-item-title" href="#">ARAMA RESORT & SPA</a></th>
+							<th rowspan="3" class="hotel-img"><img src="img/hotel/hotel_arama.jpg" width="135" height="90" alt="Гостиница ARAMA RESORT & SPA" aria-hidden="true"></th>
+							<th colspan="2" class="hotel-item-name"><a class="hotel-item-title" href="#" aria-label="Гостиница ARAMA RESORT & SPA">ARAMA RESORT & SPA</a></th>
 							<th class="hotel-star">
 								
 							</th>
@@ -144,7 +144,7 @@
 					<table class="hotel-list-item">
 						<tr>
 							<th  rowspan="3" class="hotel-img"><img src="img/hotel/hotel_desert.jpg" width="135" height="90" alt="Мотель DESERT QUAIL INN"></th>
-							<th colspan="2" class="hotel-item-name"><a class="hotel-item-title" href="#">DESERT QUAIL INN</a></th>
+							<th colspan="2" class="hotel-item-name"><a class="hotel-item-title" href="#" aria-label="Мотель DESERT QUAIL INN">DESERT QUAIL INN</a></th>
 							<th class="hotel-star"></th>
 						</tr>
 						<tr>
@@ -167,7 +167,7 @@
 					<table class="hotel-list-item">
 						<tr>
 							<th  rowspan="3" class="hotel-img"><img src="img/hotel/hotel_villas.jpg" width="135" height="90" alt="Апартаменты VILLAS AT POCO DIABLO"></th>
-							<th colspan="2" class="hotel-item-name"><a class="hotel-item-title" href="#">VILLAS AT POCO DIABLO</a></th>
+							<th colspan="2" class="hotel-item-name"><a class="hotel-item-title" href="#" aria-label="Апартаменты VILLAS AT POCO DIABLO">VILLAS AT POCO DIABLO</a></th>
 							<th class="hotel-star"></th>
 						</tr>
 						<tr>
@@ -192,13 +192,19 @@
 	<!-- Подвал сайта -->
 		<p class="footer-contacts">
 			<span class="contacts-subtitle">#visitSEDONA</span>
-			<a class="footer-phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>	
+			<a class="footer-phone" href="tel:+74956660166" aria-label="Контактный телефон">ТЕЛ: +7(495) 666-01-66</a>	
 		</p>
 		<div class="footer-social">
-			<ul class="footer-social-list">
-				<li><a class="social-button" href="#"><img src="img/icon/twitter.svg" alt="Twitter"></a></li>
-				<li><a class="social-button" href="#"><img src="img/icon/fb.svg" alt="Facebook"></a></li>
-				<li><a class="social-button" href="#"><img src="img/icon/youtube.svg" alt="YouTube"></a></li>
+			<ul class="footer-social-list" aria-label="Социальные сети">
+				<li>
+					<a class="social-button" href="#" aria-label="Страница Twitter"><img src="img/icon/twitter.svg" alt="Twitter" aria-hidden="true" focusable="false"></a>
+				</li>
+				<li>
+					<a class="social-button" href="#" aria-label="Страница Facebook"><img src="img/icon/fb.svg" alt="Facebook" aria-hidden="true" focusable="false"></a>
+				</li>
+				<li>
+					<a class="social-button" href="#" aria-label="Страница YouTube"><img src="img/icon/youtube.svg" alt="YouTube" aria-hidden="true" focusable="false"></a>
+				</li>
 			</ul>
 		</div>
 		<p class="footer-copyright">
