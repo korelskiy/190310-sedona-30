@@ -354,6 +354,12 @@ background-color: var(--basic-light-gray);
   position: absolute; 
   left: 50%;
   margin-left: -284px;
+  animation: bounce 0.5s;
+}
+
+.search-form-none {
+  display: none;
+
 }
 
 .search-item {
@@ -374,7 +380,8 @@ background-color: var(--basic-light-gray);
 }
 
 
-.search-input-date {
+.search-input-date-in,
+.search-input-date-out {
   background-color: var(--basic-light-gray);
   outline: none;
   border: none;
@@ -391,14 +398,16 @@ background-color: var(--basic-light-gray);
   background-position: right 9px top 7px;
 }
 
-.search-input-date:hover {
+.search-input-date-in:hover,
+.search-input-date-out:hover {
   background-color: var(--special-dark-gray);
   background-image: url(../img/icon/calendar-black.svg);
   background-repeat: no-repeat;
   background-position: right 9px top 7px;
 }
 
-.search-input-date:focus {
+.search-input-date-in:focus,
+.search-input-date-out:focus{
   background: var(--basic-white);
   border: 2px solid var(--basic-gray-catalog);
   background-image: url(../img/icon/calendar-blue.svg);
@@ -1140,4 +1149,25 @@ background-color: var(--basic-light-gray);
 .button-reserve:focus {
   background-color: var(--special-brown-dark);
   color: rgb(255, 255, 255, 0.3);
+}
+
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-86px);
+  }
+
+  70% {
+    transform: translateY(0px);
+  }
+
+  90% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
