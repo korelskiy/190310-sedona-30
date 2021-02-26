@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico"><!-- 32×32 -->
     <link rel="icon" href="img/icon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/icon/apple.png"><!-- 180×180 -->
@@ -98,28 +98,41 @@
 			<h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
 			<p class="search-title">Заинтересовались?</p>
 			<p class="search-text">Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-			<button class="button button-search" type="button">Поиск гостиницы в Седоне</button> <!-- При нажатии на кнопку открывается форма поиска -->
-			<form class="search-form search-form-none" action="https://echo.htmlacademy.ru" method="get">
+			<a class="button button-search" href="blank.html">Поиск гостиницы в Седоне</a>
+			<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
 				<p class="search-item">
 					<label for="search-date-in">Дата заезда:</label>
-					<input class="search-input-date-in" type="text" name="date_in" id="search-date-in" value="24 апреля 2017">
+					<input class="search-input-date-in" type="text" name="date_in" id="search-date-in" placeholder="24 апреля 2017">
 				</p>
 				<p class="search-item">
 					<label for="search-date-out">Дата выезда:</label>
-					<input class="search-input-date-out" type="text" name="date_out" id="search-date-out" value="04 июля 2017">
+					<input class="search-input-date-out" type="text" name="date_out" id="search-date-out" placeholder="04 июля 2017">
 				</p>
 				<p class="search-item">
 					<label for="search-adults">Взрослые:</label>
-					<input class="search-input-adults" type="text" name="adults" value="2" size="10" id="search-adults">
+					<input class="search-input-adults" type="text" name="adults" placeholder="2" size="10" id="search-adults">
 					<label for="search-kids" class="search-label-kids">Дети:</label>
-					<input class="search-input-kids" type="text" name="kids" value="0" size="5" id="search-kids">
+					<input class="search-input-kids" type="text" name="kids" placeholder="0" size="5" id="search-kids">
 				</p>
 				<button class="button button-find" type="submit" aria-label="Найти гостиницы">Найти</button>
+				<div class="calendar-in">
+					<svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z" fill="#A9A9A9"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z" fill="#A9A9A9"/>
+					</svg>
+				</div>
+				<div class="calendar-out">
+					<svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z" fill="#A9A9A9"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z" fill="#A9A9A9"/>
+					</svg>
+				</div>
 			</form>
 		</section>
 		<section class="map">
 			<h2 class="visually-hidden">Карта города Седоны</h2>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249694.86368820103!2d-111.92979500444302!3d34.68644951393233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1614275195273!5m2!1sru!2sru" width="1199" height="594" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			<iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249694.86368820103!2d-111.92979500444302!3d34.68644951393233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1614275195273!5m2!1sru!2sru" width="1199" height="594" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			<img class="map-img" src="img/map.jpg" width="1199" height="594" alt="Карта города Седоны">
 		</section>
 	</main>
 	<footer class="main-footer">

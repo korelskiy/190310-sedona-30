@@ -362,6 +362,10 @@ background-color: var(--basic-light-gray);
 
 }
 
+.search-form-error {
+  animation: shake 0.6s;
+}
+
 .search-item {
   font-family: "PTSans-Bold";
   font-weight: 700;
@@ -379,7 +383,33 @@ background-color: var(--basic-light-gray);
   align-items: center;
 }
 
+.calendar-in {
+  position: absolute;
+  right: 64px;
+  top: 61px;
+}
 
+.calendar-out {
+  position: absolute;
+  right: 64px;
+  top: 130px;
+}
+
+.calendar-in:hover path {
+  fill: var(--basic-black);
+}
+
+.calendar-in:active path {
+  fill: var(--basic-blue);
+}
+
+.calendar-out:hover path {
+  fill: var(--basic-black);
+}
+
+.calendar-out:active path {
+  fill: var(--basic-blue);
+}
 .search-input-date-in,
 .search-input-date-out {
   background-color: var(--basic-light-gray);
@@ -393,26 +423,24 @@ background-color: var(--basic-light-gray);
   position: absolute;  
   right: 0px;
   text-transform: uppercase;
-  background-image: url(../img/icon/calendar.svg);
-  background-repeat: no-repeat;
-  background-position: right 9px top 7px;
 }
 
 .search-input-date-in:hover,
 .search-input-date-out:hover {
   background-color: var(--special-dark-gray);
-  background-image: url(../img/icon/calendar-black.svg);
-  background-repeat: no-repeat;
-  background-position: right 9px top 7px;
 }
 
 .search-input-date-in:focus,
 .search-input-date-out:focus{
   background: var(--basic-white);
   border: 2px solid var(--basic-gray-catalog);
-  background-image: url(../img/icon/calendar-blue.svg);
-  background-repeat: no-repeat;
-  background-position: right 9px top 7px;
+}
+
+.search-input-date-in::placeholder,
+.search-input-date-out::placeholder,
+.search-input-adults::placeholder,
+.search-input-kids::placeholder {
+  color: var(--basic-black);
 }
 
 .search-input-adults {
@@ -505,12 +533,16 @@ background-color: var(--basic-light-gray);
 .map {
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 0;;
 }
 
 .map-img {
   max-width: 100%;
   height: auto;
+}
+
+.google-map {
+
 }
 
 /* Footer */
@@ -1038,10 +1070,13 @@ background-color: var(--basic-light-gray);
 }
 
 .button-search {
+  display: inline-block;
+  vertical-align: center;
+  text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-brown);
   font-size: 21px;
-  line-height: 26px;
+  line-height: 86px;
   width: 568px;
   height: 86px;
 }
@@ -1169,5 +1204,27 @@ background-color: var(--basic-light-gray);
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }

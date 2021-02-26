@@ -17,7 +17,8 @@ try {
   isStorageSupport = false;
 }
 
-button.addEventListener("click", function () {
+button.addEventListener("click", function (evt) {
+  evt.preventDefault();
   form.classList.toggle ('search-form-none');
   if (storage_adults) {
     adults.value = storage_adults;
@@ -31,7 +32,7 @@ date_in.focus();
 form.addEventListener("submit", function (evt) {
     if (!date_in.value || !date_out.value || !adults.value || !kids.value) {
     	evt.preventDefault();
-    	console.log('Не заполнены поля ввода!!!');
+      form.classList.add("search-form-error");
   } else {
   	if (isStorageSupport) {
   		localStorage.setItem("adults", adults.value);
