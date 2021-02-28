@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico"><!-- 32×32 -->
     <link rel="icon" href="img/icon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/icon/apple.png"><!-- 180×180 -->
@@ -132,7 +132,9 @@
 		<section class="map">
 			<h2 class="visually-hidden">Карта города Седоны</h2>
 			<iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249694.86368820103!2d-111.92979500444302!3d34.68644951393233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1614275195273!5m2!1sru!2sru" width="1199" height="594" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-			<img class="map-img" src="img/map.jpg" width="1199" height="594" alt="Карта города Седоны">
+			<div class="map-image-wrap">
+				<img class="map-img" src="img/map.jpg" width="1199" height="594" alt="Карта города Седоны">
+			</div>
 		</section>
 	</main>
 	<footer class="main-footer">
@@ -144,13 +146,13 @@
 		<div class="footer-social">
 			<ul class="footer-social-list" aria-label="Социальные сети">
 				<li>
-					<a class="social-button" href="#" aria-label="Страница Twitter"><img src="img/icon/twitter.svg" alt="Twitter" aria-hidden="true" focusable="false"></a>
+					<a class="social-button" href="#" aria-label="Страница Twitter"><img src="img/icon/twitter.svg" alt="Twitter" aria-hidden="true"></a>
 				</li>
 				<li>
-					<a class="social-button" href="#" aria-label="Страница Facebook"><img src="img/icon/fb.svg" alt="Facebook" aria-hidden="true" focusable="false"></a>
+					<a class="social-button" href="#" aria-label="Страница Facebook"><img src="img/icon/fb.svg" alt="Facebook" aria-hidden="true"></a>
 				</li>
 				<li>
-					<a class="social-button" href="#" aria-label="Страница YouTube"><img src="img/icon/youtube.svg" alt="YouTube" aria-hidden="true" focusable="false"></a>
+					<a class="social-button" href="#" aria-label="Страница YouTube"><img src="img/icon/youtube.svg" alt="YouTube" aria-hidden="true"></a>
 				</li>
 			</ul>
 		</div>
@@ -161,6 +163,6 @@
 			</a>
 		</p>
 	</footer>
-	<script src="js/form.js"></script>
+	<script src="js/form.min.js"></script>
   </body>
 </html>
