@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>HTML Academy: Каталог Седона</title>
 	<link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 	<link rel="icon" href="favicon.ico"><!-- 32×32 -->
     <link rel="icon" href="img/icon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/icon/apple.png"><!-- 180×180 -->
@@ -29,7 +29,7 @@
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр гостиниц города Седона</h2>
 				<form class="filter" action="https://echo.htmlacademy.ru" method="get">
-					<fieldset class="filter-checkbox">
+					<fieldset class="filter-checkbox-infrastructure">
 						<legend class="filter-title-checkbox">Инфраструктура:</legend>
 						<ul class="filter-list">
 							<li class="filter-option">
@@ -46,7 +46,7 @@
 							</li>
 						</ul>
 					</fieldset>
-					<fieldset class="filter-checkbox">
+					<fieldset class="filter-checkbox-shelter">
 						<legend class="filter-title-checkbox">Тип жилья:</legend>
 						<ul class="filter-list">
 							<li class="filter-option">
@@ -59,7 +59,7 @@
 							</li>
 							<li class="filter-option">
 								<input class="filter-checkbox-item visually-hidden" type="checkbox" name="type_apartments" id="filter-type-apartments" checked>
-								<label for="filter-type-apartments">Аппартаменты</label>
+								<label for="filter-type-apartments">Апартаменты</label>
 							</li>
 						</ul>
 
@@ -69,7 +69,7 @@
 						<div class="range-filter">
           					<div class="price-controls">
           						<label class="min-price" aria-label="Цена от">
-              					от <input class="filter-cost-text" type="text" name="cost_day_from" value="0" size = "4">
+              					от <input class="filter-cost-text" type="text" name="cost_day_from" value="0" size = "1">
             					</label>
             					<label class="max-price" aria-label="Цена до">
               					до <input class="filter-cost-text" type="text" name="cost_day_to" value="3000" size = "4">
@@ -91,7 +91,7 @@
 		</section>
 		<section class="sorting">
 			<h2 class="visually-hidden">Сортировка результатов поиска</h2>
-			<p class="sorting-subtitle">Найдено:3</p>
+			<p class="sorting-subtitle">Найдено: 3</p>
 			<p class="sorting-text">Сортировка:</p>
 			<ul class="sorting-list" aria-label="Сортировка результатов">
 				<li class="sorting-list-item sorting-list-item-current">
@@ -115,11 +115,11 @@
 			<h2 class="visually-hidden">Список гостиниц</h2>
 			<ul class="hotel-list">
 				<li class="hotel-list-items">
-					<h3 class="visually-hidden">Гостиница ARAMA RESORT & SPA</h3>
+					<h3 class="visually-hidden">Гостиница AMARA RESORT & SPA</h3>
 					<table class="hotel-list-item">
 						<tr>
-							<th rowspan="3" class="hotel-img"><img src="img/hotel/hotel_arama.jpg" width="135" height="90" alt="Гостиница ARAMA RESORT & SPA" aria-hidden="true"></th>
-							<th colspan="2" class="hotel-item-name"><a class="hotel-item-title" href="#" aria-label="Гостиница ARAMA RESORT & SPA">ARAMA RESORT & SPA</a></th>
+							<th rowspan="3" class="hotel-img"><img src="img/hotel/hotel_arama.jpg" width="135" height="90" alt="Гостиница AMARA RESORT & SPA" aria-hidden="true"></th>
+							<th colspan="2" class="hotel-item-name"><a class="hotel-item-title" href="#" aria-label="Гостиница AMARA RESORT & SPA">AMARA RESORT & SPA</a></th>
 							<th class="hotel-star">
 								
 							</th>

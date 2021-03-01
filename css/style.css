@@ -693,10 +693,16 @@ background-color: var(--basic-light-gray);
   margin-bottom: 7px;
 }
 
-.filter-checkbox {
+.filter-checkbox-infrastructure {
   border: none;
   margin: 25px 0 0 0;
   padding: 0 0 0 72px;
+}
+
+.filter-checkbox-shelter {
+  border: none;
+  margin: 25px 0 0 -72px;
+  padding: 0;
 }
 
 .filter-cost{
@@ -803,7 +809,6 @@ background-color: var(--basic-light-gray);
   position: absolute;
   width: 2px;
   height: 22px;
-  margin-left: -10px;
   background-color: var(--basic-white);
 }
 
@@ -853,6 +858,8 @@ background-color: var(--basic-light-gray);
 .price-controls label {
   color: var(--basic-white);
   text-align: center;
+  margin-left: 24px;
+  margin-top: -2px;
 }
 
 .filter-cost-text {
@@ -860,6 +867,7 @@ background-color: var(--basic-light-gray);
   background: transparent;
   border: none;
   color: var(--basic-white);
+  margin-left: -4px;
 }
 
 /* Sorting */
@@ -889,6 +897,7 @@ background-color: var(--basic-light-gray);
   line-height: 18px; 
   color: var(--basic-black);
   padding-right: 40px;
+  padding-bottom: 6px;
   margin: 0;
 }
 
@@ -898,7 +907,7 @@ background-color: var(--basic-light-gray);
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding: 0 0 5px 0;
 }
 
 .sorting-list-item {
@@ -943,46 +952,47 @@ background-color: var(--basic-light-gray);
   position: absolute;
   padding: 0;
   right: 23px;
+  bottom: 36px;
   border-left: 5.5px solid transparent;
   border-right: 5.5px solid transparent;
-  border-top: 10px solid var(--basic-light-gray-catalog);
+  border-bottom: 10px solid var(--basic-light-gray-catalog);
 }
 
 .sorting-arrow-down a{
   position: absolute;
   right: 0px;
+  bottom: 36px;
   border-left: 5.5px solid transparent;
   border-right: 5.5px solid transparent;
-  border-bottom: 10px solid;
-  border-bottom-color: var(--basic-light-gray-catalog);
+  border-top: 10px solid var(--basic-light-gray-catalog);;
 }
 
 .sorting-arrow-up a:hover {
-  border-top: 10px solid var(--basic-black);
-}
-
-.sorting-arrow-down a:hover {
   border-bottom: 10px solid var(--basic-black);
 }
 
+.sorting-arrow-down a:hover {
+  border-top: 10px solid var(--basic-black);
+}
+
 .sorting-arrow-up a:focus {
-  border-top: 10px solid var(--basic-blue);
+  border-bottom: 10px solid var(--basic-blue);
 }
 
 .sorting-arrow-down a:focus {
-  border-bottom: 10px solid var(--basic-blue);
-}
-
-.sorting-arrow-down a:active {
-  border-bottom: 10px solid var(--basic-blue);
-}
-
-.sorting-arrow-up a:active {
   border-top: 10px solid var(--basic-blue);
 }
 
+.sorting-arrow-down a:active {
+  border-top: 10px solid var(--basic-blue);
+}
+
+.sorting-arrow-up a:active {
+  border-bottom: 10px solid var(--basic-blue);
+}
+
 .sorting-arrow-down-current a{
-  border-bottom: 10px solid var(--basic-blue);  
+  border-top: 10px solid var(--basic-blue);  
 }
 
 /* Catalog */
@@ -1027,6 +1037,8 @@ background-color: var(--basic-light-gray);
 .hotel-list-text {
   width: 110px;
   vertical-align: top;
+  vertical-align: top;
+  padding-bottom: 9px
 }
 
 .hotel-rating {
@@ -1035,10 +1047,11 @@ background-color: var(--basic-light-gray);
   vertical-align: middle;
   color: var(--special-gray-catalog);
   width: 110px;
+  padding-bottom: 2px
 }
 
 .hotel-star{
-  padding: 0px;
+  padding: -1px;
 }
 
 .hotel-list li:nth-child(1) .hotel-star{
@@ -1047,7 +1060,7 @@ background-color: var(--basic-light-gray);
   url(../img/icon/star.svg),
   url(../img/icon/star.svg),
   url(../img/icon/star.svg);
-  background-position: right center, right 22px center, right 47px center, right 71px center;
+  background-position: right top -1px, right 22px top -1px, right 47px top -1px, right 71px top -1px;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
@@ -1056,7 +1069,7 @@ background-color: var(--basic-light-gray);
   url(../img/icon/star.svg),
   url(../img/icon/star.svg),
   url(../img/icon/star.svg);
-  background-position: right center, right 22px center, right 47px center;
+  background-position: right top -1px, right 22px top -1px, right 47px top -1px;
   background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
@@ -1064,25 +1077,24 @@ background-color: var(--basic-light-gray);
   background-image: 
   url(../img/icon/star.svg),
   url(../img/icon/star.svg);
-  background-position: right center, right 22px center;
+  background-position: right top -1px, right 22px top -1px;
   background-repeat: no-repeat, no-repeat;
 }
 
 .hotel-list-reserve {
   vertical-align: middle;
-  padding-left: 6px;
 }
 
 .hotel-list-text-cost{
   vertical-align: top;
-  padding-left: 6px;
+  padding: 0;
 }
 
 .hotel-item-title {
   font-family: "PTSans-Bold";
   font-weight: 700;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 12px;
   color: var(--basic-black);
   margin: 0;
   padding: 0;
@@ -1198,7 +1210,8 @@ background-color: var(--basic-light-gray);
 
 .button-detail {
   display: inline-block;
-  padding: 3px 17px;
+  padding: 3px 16px;
+  margin-left: -1px;
   margin-right: 6px;
   color: var(--basic-white);
   background-color: var(--basic-blue);
