@@ -1,10 +1,9 @@
-const button = document.querySelector('.button-search');
+const button = document.querySelector(".button-search");
 const form = document.querySelector(".search-form");
 const date_in = document.querySelector(".search-input-date-in");
 const date_out = document.querySelector(".search-input-date-out");
 const adults = document.querySelector(".search-input-adults");
 const kids = document.querySelector(".search-input-kids");
-
 
 let isStorageSupport = true;
 let storage_adults = "";
@@ -19,7 +18,7 @@ try {
 
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
-  form.classList.toggle ('search-form-none');
+  form.classList.toggle ("search-form-none");
   if (storage_adults) {
     adults.value = storage_adults;
 	}
@@ -40,5 +39,4 @@ form.addEventListener("submit", function (evt) {
   	}
 
   }
-    
 });
