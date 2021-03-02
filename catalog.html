@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<title>HTML Academy: Каталог Седона</title>
 		<link href="css/normalize.css" rel="stylesheet">
-    	<link href="css/style.css" rel="stylesheet">
+    	<link href="css/style.min.css" rel="stylesheet">
 		<link rel="icon" href="favicon.ico"><!-- 32×32 -->
     	<link rel="icon" href="img/icon/favicon.svg" type="image/svg+xml">
     	<link rel="apple-touch-icon" href="img/icon/apple.png"><!-- 180×180 -->
@@ -78,8 +78,8 @@
           						<div class="scale">
               	            		<div class="bar"></div>
             					</div>
-            					<div class="toggle toggle-min" tabindex="0"></div>
-            					<div class="toggle toggle-max" tabindex="0"></div>
+            					<div class="toggle toggle-min" tabindex="0" aria-label="Стоимость от"></div>
+            					<div class="toggle toggle-max" tabindex="0" aria-label="Стоимость до"></div>
         					</div>
         				</div>
 					</fieldset>
@@ -118,7 +118,28 @@
 								<th rowspan="3" class="hotel-img"><img src="img/hotel/hotel_arama.jpg" width="135" height="90" alt="Гостиница AMARA RESORT & SPA" aria-hidden="true"></th>
 								<th colspan="2" class="hotel-item-name"><a class="hotel-item-title" href="#" aria-label="Гостиница AMARA RESORT & SPA">AMARA RESORT & SPA</a></th>
 								<th class="hotel-star">
-									
+									<ul class="hotel-star-list" aria-label="Рейтинг гостиницы">
+										<li class="hotel-star-list-item">
+											<a href="#">
+												<svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0l2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0z" fill="#81B3D2"/></svg>
+											</a>
+										</li>
+										<li class="hotel-star-list-item">
+											<a href="#">
+												<svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0l2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0z" fill="#81B3D2"/></svg>
+											</a>
+										</li>
+										<li class="hotel-star-list-item">
+											<a href="#">
+												<svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0l2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0z" fill="#81B3D2"/></svg>
+											</a>
+										</li>
+										<li class="hotel-star-list-item">
+											<a href="#">
+												<svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0l2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0z" fill="#81B3D2"/></svg>
+											</a>
+										</li>
+									</ul>
 								</th>
 							</tr>
 							<tr>
@@ -132,7 +153,7 @@
 								<td class="hotel-list-reserve">
 									<a class="button button-reserve" href="#">Забронировать</a>
 								</td>
-								<td class="hotel-list-text hotel-rating">Рейтинг: 8.5</td>
+								<td class="hotel-rating">Рейтинг: 8.5</td>
 							</tr>
 						</table>
 					</li>
@@ -142,7 +163,25 @@
 							<tr>
 								<th  rowspan="3" class="hotel-img"><img src="img/hotel/hotel_desert.jpg" width="135" height="90" alt="Мотель DESERT QUAIL INN"></th>
 								<th colspan="2" class="hotel-item-name"><a class="hotel-item-title" href="#" aria-label="Мотель DESERT QUAIL INN">DESERT QUAIL INN</a></th>
-								<th class="hotel-star"></th>
+								<th class="hotel-star">
+									<ul class="hotel-star-list" aria-label="Рейтинг мотеля">
+										<li class="hotel-star-list-item">
+											<a href="#">
+												<svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0l2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0z" fill="#81B3D2"/></svg>
+											</a>
+										</li>
+										<li class="hotel-star-list-item">
+											<a href="#">
+												<svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0l2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0z" fill="#81B3D2"/></svg>
+											</a>
+										</li>
+										<li class="hotel-star-list-item">
+											<a href="#">
+												<svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0l2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0z" fill="#81B3D2"/></svg>
+											</a>
+										</li>
+									</ul>
+								</th>
 							</tr>
 							<tr>
 								<td class="hotel-list-text">Мотель</td>
@@ -155,7 +194,7 @@
 								<td class="hotel-list-reserve">
 									<a class="button button-reserve" href="#">Забронировать</a>
 								</td>
-								<td class="hotel-list-text hotel-rating">Рейтинг: 8.9</td>
+								<td class="hotel-rating">Рейтинг: 8.9</td>
 							</tr>
 						</table>
 					</li>
@@ -165,7 +204,20 @@
 							<tr>
 								<th  rowspan="3" class="hotel-img"><img src="img/hotel/hotel_villas.jpg" width="135" height="90" alt="Апартаменты VILLAS AT POCO DIABLO"></th>
 								<th colspan="2" class="hotel-item-name"><a class="hotel-item-title" href="#" aria-label="Апартаменты VILLAS AT POCO DIABLO">VILLAS AT POCO DIABLO</a></th>
-								<th class="hotel-star"></th>
+								<th class="hotel-star">
+									<ul class="hotel-star-list" aria-label="Рейтинг апартаментов">
+										<li class="hotel-star-list-item">
+											<a href="#">
+												<svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0l2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0z" fill="#81B3D2"/></svg>
+											</a>
+										</li>
+										<li class="hotel-star-list-item">
+											<a href="#">
+												<svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0l2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0z" fill="#81B3D2"/></svg>
+											</a>
+										</li>
+									</ul>
+								</th>
 							</tr>
 							<tr>
 								<td class="hotel-list-text">Апартаменты</td>
@@ -178,7 +230,7 @@
 								<td class="hotel-list-reserve">
 									<a class="button button-reserve" href="#">Забронировать</a>
 								</td>
-								<td class="hotel-list-text hotel-rating">Рейтинг: 9.2</td>
+								<td class="hotel-rating">Рейтинг: 9.2</td>
 							</tr>
 						</table>
 					</li>
