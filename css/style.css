@@ -452,16 +452,17 @@ background-color: var(--basic-light-gray);
   top: 6px;
 }
 
-.calendar-in:hover path{
+.calendar-in:hover path,
+.calendar-in:focus path{
   fill: var(--basic-black);
 }
 
 .calendar-in:active path{
   fill: var(--basic-blue);
-  outline: none;
 }
 
-.calendar-out:hover path{
+.calendar-out:hover path,
+.calendar-out:focus path{
   fill: var(--basic-black);
 }
 
@@ -534,16 +535,17 @@ background-color: var(--basic-light-gray);
   top: -6px;
 }
 
-.form-adults-icon-minus:hover path{
+.form-adults-icon-minus:hover path,
+.form-adults-icon-minus:focus path{
   fill: var(--basic-black);
 }
 
 .form-adults-icon-minus:active path{
   fill: var(--basic-blue);
-  outline: none;
 }
 
-.form-adults-icon-plus:hover path{
+.form-adults-icon-plus:hover path,
+.form-adults-icon-plus:focus path{
   fill: var(--basic-black);
 }
 
@@ -551,16 +553,17 @@ background-color: var(--basic-light-gray);
   fill: var(--basic-blue);
 }
 
-.form-kids-icon-minus:hover path{
+.form-kids-icon-minus:hover path,
+.form-kids-icon-minus:focus path{
   fill: var(--basic-black);
 }
 
 .form-kids-icon-minus:active path{
   fill: var(--basic-blue);
-  outline: none;
 }
 
-.form-kids-icon-plus:hover path{
+.form-kids-icon-plus:hover path,
+.form-kids-icon-plus:focus path{
   fill: var(--basic-black);
 }
 
@@ -1125,17 +1128,10 @@ background-color: var(--basic-light-gray);
   color: var(--special-gray-catalog);
 }
 
-.hotel-star-list{
-  display: flex;
-  list-style: none;
-  justify-content: flex-end;
-  margin-top: -6px;
-  margin-right: -8px;
-}
-
-.hotel-star-list-item a{
-  margin: 0;
-  padding-right: 5px;
+.hotel-star-items{
+  text-align: right;
+  margin-right: -3px;
+  margin-top: -3px;
 }
 
 .hotel-list-reserve{
